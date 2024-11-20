@@ -70,13 +70,13 @@ function M.load()
 	vim.o.termguicolors = true
 	vim.g.colors_name = "elixir-bloom"
 
-	local colors = require("themes.elixir-bloom.colors")
+	local colors = require("elixir-bloom.colors")
 	local groups = {
-		base = require("themes.elixir-bloom.groups.base").setup(colors),
-		treesitter = require("themes.elixir-bloom.groups.treesitter").setup(colors),
-		lsp = require("themes.elixir-bloom.groups.lsp").setup(colors),
-		plugins = require("themes.elixir-bloom.groups.plugins").setup(colors),
-		final = require("themes.elixir-bloom.groups.final").setup(colors),
+		base = require("elixir-bloom.groups.base").setup(colors),
+		treesitter = require("elixir-bloom.groups.treesitter").setup(colors),
+		lsp = require("elixir-bloom.groups.lsp").setup(colors),
+		plugins = require("elixir-bloom.groups.plugins").setup(colors),
+		final = require("elixir-bloom.groups.final").setup(colors),
 	}
 
 	for _, group_highlights in pairs(groups) do
