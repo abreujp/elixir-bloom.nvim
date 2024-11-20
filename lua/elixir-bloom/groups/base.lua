@@ -1,5 +1,5 @@
 -- Base editor and syntax highlighting groups
-local colors = require("themes.elixir-bloom.colors")
+local colors = require("elixir-bloom.colors")
 local M = {}
 
 function M.setup()
