@@ -1,0 +1,62 @@
+-- Treesitter syntax highlighting configuration
+local colors = require("themes.elixir-bloom.colors")
+local M = {}
+
+function M.setup()
+	local treesitter = {
+		["@text"] = { fg = colors.white },
+		["@text.strong"] = { fg = colors.white, bold = true },
+		["@text.emphasis"] = { fg = colors.white, italic = true },
+		["@text.underline"] = { underline = true },
+		["@text.title"] = { fg = colors.blue, bold = true },
+		["@text.literal"] = { fg = colors.green },
+		["@text.uri"] = { fg = colors.b_green, underline = true },
+		["@comment"] = { fg = colors.b_black, italic = true },
+		["@comment.documentation"] = { fg = colors.cyan },
+		["@comment.note"] = { fg = colors.cyan },
+		["@comment.warning"] = { fg = colors.cherry2 },
+		["@comment.error"] = { fg = colors.cherry3 },
+		["@comment.todo"] = { fg = colors.blue, bold = true },
+		["@punctuation.delimiter"] = { fg = colors.b_cyan },
+		["@punctuation.bracket"] = { fg = colors.b_cyan },
+		["@punctuation.special"] = { fg = colors.magenta },
+		["@operator"] = { fg = colors.white },
+		["@property"] = { fg = colors.white },
+		["@field"] = { fg = colors.white },
+		["@variable.member"] = { fg = colors.white },
+		["@string"] = { fg = colors.blue },
+		["@string.regex"] = { fg = colors.blue },
+		["@string.escape"] = { fg = colors.b_blue },
+		["@string.special"] = { fg = colors.b_blue },
+		["@number"] = { fg = colors.yellow },
+		["@number.float"] = { fg = colors.yellow },
+		["@keyword"] = { fg = colors.blue },
+		["@keyword.function"] = { fg = colors.blue },
+		["@keyword.operator"] = { fg = colors.white },
+		["@keyword.return"] = { fg = colors.blue },
+		["@keyword.conditional"] = { fg = colors.blue },
+		["@function"] = { fg = colors.blue },
+		["@function.builtin"] = { fg = colors.blue },
+		["@function.call"] = { fg = colors.blue },
+		["@function.macro"] = { fg = colors.magenta },
+		["@method"] = { fg = colors.blue },
+		["@method.call"] = { fg = colors.blue },
+		["@variable"] = { fg = colors.b_yellow },
+		["@variable.builtin"] = { fg = colors.b_yellow, italic = true },
+		["@variable.parameter"] = { fg = colors.b_cyan },
+		["@variable.member"] = { fg = colors.b_yellow },
+		["@constant"] = { fg = colors.blue },
+		["@constant.builtin"] = { fg = colors.blue },
+		["@constant.macro"] = { fg = colors.magenta },
+		["@type"] = { fg = colors.b_green },
+		["@type.builtin"] = { fg = colors.b_green, italic = true },
+		["@type.definition"] = { fg = colors.b_green },
+		["@type.qualifier"] = { fg = colors.blue },
+		["@tag"] = { fg = colors.blue },
+		["@tag.attribute"] = { fg = colors.b_yellow },
+		["@tag.delimiter"] = { fg = colors.b_cyan },
+	}
+	return treesitter
+end
+
+return M
