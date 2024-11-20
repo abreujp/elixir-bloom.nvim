@@ -1,1 +1,1 @@
-require("themes.elixir-bloom").load()
+require("elixir-bloom").load()
