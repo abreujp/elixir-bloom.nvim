@@ -1,83 +1,85 @@
 # 🧙‍♂️ Elixir-Bloom Theme
 
-A Neovim colorscheme inspired by the elegance and resilience of the Elixir programming language, featuring deep purples and vibrant pinks that create a cohesive and visually pleasing development environment.
+A Neovim colorscheme that draws inspiration from the mystical world of alchemy and the elegant nature of the Elixir programming language. Like a blooming flower in a magical garden, this theme combines deep purples and ethereal pinks to create a harmonious and enchanting development environment.
 
 ![Elixir Bloom Preview](preview.png)
 
 ## 🎨 Color Palette
-
 ![Elixir Bloom Color Palette](palette.png)
 
-The theme draws inspiration from Elixir's core principles of fault-tolerance, productivity, and maintainability:
+The theme embodies the alchemical principles and Elixir's core values:
 
-- **Deep Purple (#1A1626)**: Represents the depth and maturity of the BEAM VM
-- **Vibrant Pink (#C365E9)**: Symbolizes Elixir's fresh approach to functional programming
-- **Ethereal White (#F5EBFF)**: Reflects the clarity and simplicity of Elixir's syntax
-- **Soft Magenta (#ECC1FF)**: Represents the gentle learning curve despite powerful features
-- **Light Purple (#E4B2FF)**: Symbolizes the interconnected nature of Elixir processes
+- **Darkest Background (#1A1626)**: The depth of the midnight sky, where alchemical transformations begin
+- **Elixir Purple (#9A3BBC)**: The signature color of Elixir, representing transformation and power
+- **Bright Purple (#C365E9)**: Like a vibrant bloom, symbolizing growth and creativity
+- **Purple-tinted White (#F5EBFF)**: The ethereal glow of successful transmutation
+- **Bluish Purple (#957ED3)**: The mystical essence of alchemical processes
+
+Key features of the color scheme:
+- High contrast for excellent readability
+- Carefully selected purple variants for syntax highlighting
+- Warm accent colors for important elements
+- Soothing background gradients for long coding sessions
+- Strategic color placement to reduce eye strain
 
 ## ⚡ Quick Installation
 
 Using [lazy.nvim](https://github.com/folke/lazy.nvim):
-
 ```lua
 return {
-    "abreujp/elixir-bloom.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-        vim.cmd([[colorscheme elixir-bloom]])
-    end,
+  "abreujp/elixir-bloom.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.cmd([[colorscheme elixir-bloom]])
+  end,
 }
 ```
 
 Using [packer.nvim](https://github.com/wbthomason/packer.nvim):
-
 ```lua
 use {
-    "abreujp/elixir-bloom.nvim",
-    config = function()
-        vim.cmd([[colorscheme elixir-bloom]])
-    end
+  "abreujp/elixir-bloom.nvim",
+  config = function()
+    vim.cmd([[colorscheme elixir-bloom]])
+  end
 }
 ```
 
 ## 🎨 Features
 
-- Carefully crafted syntax highlighting optimized for Elixir development
-- Full LSP diagnostic and semantic token support
-- Enhanced Treesitter highlighting
-- Plugin integrations for a cohesive experience
-- Terminal colors for a consistent look
-- Dark and light variants (coming soon)
+- Syntax highlighting optimized for Elixir and functional programming
+- Full LSP diagnostic support with intuitive color coding
+- Enhanced Treesitter integration
+- Comprehensive plugin support
+- Terminal colors for a seamless experience
+- Dark variant (light theme coming soon)
 
 ## 🛠️ Configuration
 
 ```lua
 require("elixir-bloom").setup({
-    -- Override default colors
-    colors = {
-        purple = "#1A1626",
-        pink = "#C365E9",
-    },
-    -- Enable/disable specific features
-    features = {
-        italic_comments = true,
-        transparent_background = false,
-        dim_inactive_windows = true,
-    },
-    -- Plugin-specific settings
-    plugins = {
-        telescope = true,
-        nvim_tree = true,
-        lualine = true,
-    }
+  -- Override default colors
+  colors = {
+    background = "#1A1626",
+    foreground = "#F5EBFF",
+  },
+  -- Enable/disable specific features
+  features = {
+    italic_comments = true,
+    transparent_background = false,
+    dim_inactive_windows = true,
+  },
+  -- Plugin-specific settings
+  plugins = {
+    telescope = true,
+    nvim_tree = true,
+    lualine = true,
+  }
 })
 ```
 
 ## 📦 Integrated Plugins
-
-The theme provides custom highlighting for popular Neovim plugins:
 
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
@@ -87,36 +89,10 @@ The theme provides custom highlighting for popular Neovim plugins:
 - [which-key.nvim](https://github.com/folke/which-key.nvim)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 
-## 📁 Project Structure
-
-```
-.
-├── colors
-│   └── elixir-bloom.lua
-├── lua
-│   └── elixir-bloom
-│       ├── colors.lua
-│       ├── groups
-│       │   ├── base.lua
-│       │   ├── final.lua
-│       │   ├── lsp.lua
-│       │   ├── plugins.lua
-│       │   └── treesitter.lua
-│       └── init.lua
-├── palette.png
-├── preview.png
-└── README.md
-```
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details on:
-
-- Bug reports and feature requests
-- Pull request process
-- Code style guidelines
-- Development setup
-- Testing requirements
+Contributions are welcome! See our [Contributing Guide](CONTRIBUTING.md) for details.
 
 ## 📝 License
 
@@ -124,10 +100,10 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 ## 🙏 Acknowledgments
 
-Special thanks to:
-- The Elixir community for inspiration
+- The Elixir community for their magical programming language
+- Alchemical traditions that inspired the color choices
 - [Neovim](https://neovim.io/) team
-- Contributors and users of this theme
+- All contributors and users
 
 ---
 Crafted with 💜 by [abreujp](https://github.com/abreujp)
