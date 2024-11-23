@@ -6,9 +6,9 @@ function M.setup()
 	local base = {
 		Normal = { fg = colors.elixir15, bg = colors.elixir0 },
 		NormalNC = { fg = colors.elixir15, bg = colors.elixir0 },
-		NormalFloat = { fg = colors.elixir15, bg = colors.elixir1 },
-		FloatBorder = { fg = colors.elixir9 },
-		FloatTitle = { fg = colors.elixir9 },
+		NormalFloat = { fg = colors.elixir15, bg = colors.elixir0 },
+		FloatBorder = { fg = colors.elixir9, bg = colors.elixir0 },
+		FloatTitle = { fg = colors.elixir9, bg = colors.elixir0 },
 		ColorColumn = { bg = colors.elixir2 },
 		Cursor = { fg = colors.elixir0, bg = colors.elixir15 },
 		CursorLine = { bg = colors.elixir1 },
