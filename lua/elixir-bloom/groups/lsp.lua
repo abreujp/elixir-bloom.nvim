@@ -5,29 +5,42 @@ local M = {}
 
 function M.setup()
 	local lsp = {
-		DiagnosticError = { fg = colors.elixir11 },
-		DiagnosticWarn = { fg = colors.elixir8 },
-		DiagnosticInfo = { fg = colors.elixir9 },
-		DiagnosticHint = { fg = colors.elixir9 },
+		DiagnosticError = { fg = colors.elixir11, bg = colors.elixir0 },
+		DiagnosticWarn = { fg = colors.elixir8, bg = colors.elixir0 },
+		DiagnosticInfo = { fg = colors.elixir9, bg = colors.elixir0 },
+		DiagnosticHint = { fg = colors.elixir9, bg = colors.elixir0 },
 
-		DiagnosticVirtualTextError = { fg = colors.elixir11, bg = colors.elixir1 },
-		DiagnosticVirtualTextWarn = { fg = colors.elixir8, bg = colors.elixir1 },
-		DiagnosticVirtualTextInfo = { fg = colors.elixir9, bg = colors.elixir1 },
-		DiagnosticVirtualTextHint = { fg = colors.elixir9, bg = colors.elixir1 },
+		DiagnosticVirtualTextError = { fg = colors.elixir11, bg = colors.elixir0 },
+		DiagnosticVirtualTextWarn = { fg = colors.elixir8, bg = colors.elixir0 },
+		DiagnosticVirtualTextInfo = { fg = colors.elixir9, bg = colors.elixir0 },
+		DiagnosticVirtualTextHint = { fg = colors.elixir9, bg = colors.elixir0 },
 
-		DiagnosticUnderlineError = { undercurl = true, sp = colors.elixir11 },
-		DiagnosticUnderlineWarn = { undercurl = true, sp = colors.elixir8 },
-		DiagnosticUnderlineInfo = { undercurl = true, sp = colors.elixir9 },
-		DiagnosticUnderlineHint = { undercurl = true, sp = colors.elixir9 },
+		DiagnosticFloatingError = { fg = colors.elixir11, bg = colors.elixir0 },
+		DiagnosticFloatingWarn = { fg = colors.elixir8, bg = colors.elixir0 },
+		DiagnosticFloatingInfo = { fg = colors.elixir9, bg = colors.elixir0 },
+		DiagnosticFloatingHint = { fg = colors.elixir9, bg = colors.elixir0 },
 
-		DiagnosticSignError = { fg = colors.elixir11 },
-		DiagnosticSignWarn = { fg = colors.elixir8 },
-		DiagnosticSignInfo = { fg = colors.elixir9 },
-		DiagnosticSignHint = { fg = colors.elixir9 },
+		DiagnosticUnderlineError = { sp = colors.elixir11, undercurl = true },
+		DiagnosticUnderlineWarn = { sp = colors.elixir8, undercurl = true },
+		DiagnosticUnderlineInfo = { sp = colors.elixir9, undercurl = true },
+		DiagnosticUnderlineHint = { sp = colors.elixir9, undercurl = true },
+
+		DiagnosticSignError = { fg = colors.elixir11, bg = colors.elixir0 },
+		DiagnosticSignWarn = { fg = colors.elixir8, bg = colors.elixir0 },
+		DiagnosticSignInfo = { fg = colors.elixir9, bg = colors.elixir0 },
+		DiagnosticSignHint = { fg = colors.elixir9, bg = colors.elixir0 },
+
+		LspDiagnosticsDefaultError = { fg = colors.elixir11, bg = colors.elixir0 },
+		LspDiagnosticsDefaultWarning = { fg = colors.elixir8, bg = colors.elixir0 },
+		LspDiagnosticsDefaultInformation = { fg = colors.elixir9, bg = colors.elixir0 },
+		LspDiagnosticsDefaultHint = { fg = colors.elixir9, bg = colors.elixir0 },
 
 		LspReferenceText = { bg = colors.elixir2 },
 		LspReferenceRead = { bg = colors.elixir2 },
 		LspReferenceWrite = { bg = colors.elixir2 },
+
+		markdownError = { fg = colors.elixir11, bg = colors.elixir0 },
+		markdownWarning = { fg = colors.elixir8, bg = colors.elixir0 },
 
 		["@lsp.type.class"] = { fg = colors.elixir8 },
 		["@lsp.type.decorator"] = { fg = colors.elixir10 },
